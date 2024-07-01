@@ -1,7 +1,7 @@
 {
   plugins.none-ls = {
     enable = false;
-    enableLspFormat = true;
+    enableLspFormat = false;
     updateInInsert = false;
     onAttach = ''
       function(client, bufnr)
@@ -39,9 +39,18 @@
         shfmt = {
           enable = true;
         };
+# C/cpp
+        clang_format = {
+          enable = true;
+        };
+# Rust
+        rustywind = {
+          enable = true;
+        };
 # Various
         prettier = {
           enable = true;
+          disableTsServerFormatter = true;
           withArgs = ''
             {
               extra_args = { "--no-semi", "--single-quote" },
