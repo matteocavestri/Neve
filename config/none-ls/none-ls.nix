@@ -31,9 +31,15 @@
         };
       };
       formatting = {
+# Nix
         alejandra = {
           enable = true;
         };
+# Shell
+        shfmt = {
+          enable = true;
+        };
+# Various
         prettier = {
           enable = true;
           withArgs = ''
@@ -42,12 +48,15 @@
             }
           '';
         };
+# Java
         google_java_format = {
           enable = true;
         };
+# Lua
         stylua = {
           enable = true;
         };
+# Pythont
         black = {
           enable = true;
           withArgs = ''
