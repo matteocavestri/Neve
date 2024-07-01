@@ -10,7 +10,7 @@
 # C/cpp
         clangd = {
           enable = true;
-        #  filetypes = 
+          filetypes = ["c" "cpp"];
         };
 # Go
         gopls = { enable = true; };
@@ -36,8 +36,11 @@
             };
           };
         };
-# Nil-ls
-        nil-ls = {enable = true;};
+# Nix
+        nil-ls = {
+          enable = true;
+          filetypes = [ "nix" ];
+        };
 # Javascript/Typescript
         tsserver = {
           enable = false;
@@ -95,6 +98,8 @@
             };
           };
         };
+# Java
+        java-language-server = { enable = true; };
       };
       # keymaps = {
       #   silent = true;

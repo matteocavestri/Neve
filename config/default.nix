@@ -22,7 +22,7 @@
     # ./git/lazygit.nix
     ./git/neogit.nix
 
-    ./languages/nvim-jdtls.nix
+    #./languages/nvim-jdtls.nix
     ./languages/nvim-lint.nix
     ./languages/typescript-tools-nvim.nix
     ./languages/treesitter/treesitter.nix
