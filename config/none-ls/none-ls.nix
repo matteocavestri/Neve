@@ -39,7 +39,6 @@
 # Shell
         shfmt = {
           enable = true;
-          package = [ pkgs.shfmt ];
         };
 # Rust TODO
         rustywind = {
@@ -48,21 +47,17 @@
 # Go
         goimports = {
           enable = true;
-          package = [ pkgs.gotools ];
         };
         golines = {
           enable = true;
-          package = [ pkgs.golines ];
         };
 # Yaml
         yamlfmt = {
           enable = true;
-          package = [ pkgs.yamlfmt ];
         };
 # Various
         prettier = {
           enable = true;
-          package = [ pkgs.prettier ];
           disableTsServerFormatter = true;
           withArgs = ''
             {
@@ -73,17 +68,14 @@
 # Java
         google_java_format = {
           enable = true;
-          package = [ pkgs.google-java-format ];
         };
 # Lua
         stylua = {
           enable = true;
-          package = [ pkgs.stylua ];
         };
 # Pythont
         black = {
           enable = true;
-          #package = with pkgs; [ python3.12-black ];
           withArgs = ''
             {
               extra_args = { "--fast" },
