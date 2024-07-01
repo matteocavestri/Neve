@@ -1,6 +1,9 @@
 {
   plugins.dap = {
     enable = true;
+    adapters = {
+      codelldb.enable = true;
+    };
     signs = {
       dapBreakpoint = {
         text = "●";
@@ -48,10 +51,9 @@
       ];
       c = [
         {
-          type = "gdb";
+          type = "codelldb";
           request = "launch";
           name = "Launch";
-          program = "gdb";
         }
       ];
     };
