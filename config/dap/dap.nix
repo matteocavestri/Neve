@@ -23,6 +23,7 @@
 # Go
       dap-go = {
         enable = true;
+        delve.path = "dlv";
       };
       dap-ui = {
         enable = true;
