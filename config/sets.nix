@@ -139,6 +139,7 @@
         -- o.guifont = "CaskaydiaCove Nerd Font:h14:b:i"
         -- o.guifont = "BlexMono Nerd Font Mono:h14:Medium:i"
         -- o.guifont = "Liga SFMono Nerd Font:b:h15"
+        -- o.guifont = "Inconsolata Nerd Font:h:15"
       end
     '';
   };
