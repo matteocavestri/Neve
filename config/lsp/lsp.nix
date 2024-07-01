@@ -7,7 +7,19 @@
       enable = true;
       capabilities = "offsetEncoding =  'utf-16'";
       servers = {
-        clangd = {enable = true;};
+# C/cpp
+        clangd = {
+          enable = true;
+        #  filetypes = 
+        };
+# Go
+        gopls = { enable = true; };
+# Bash
+        bashls = {enable = true; };
+# Docker
+        docker-compose-language-service = {enable = true; };
+        dockerls ={ enable = true; };
+# Lua
         lua-ls = {
           enable = true;
           extraOptions = {
@@ -24,7 +36,9 @@
             };
           };
         };
+# Nil-ls
         nil-ls = {enable = true;};
+# Javascript/Typescript
         tsserver = {
           enable = false;
           filetypes = ["javascript" "javascriptreact" "typescript" "typescriptreact"];
@@ -55,10 +69,12 @@
             };
           };
         };
+# eslint
         eslint = {enable = true;};
+# Python
         pyright = {enable = true;};
         ruff-lsp = {enable = true;};
-
+# Rust
         rust-analyzer = {
           enable = true;
           installCargo = true;

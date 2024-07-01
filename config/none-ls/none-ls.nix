@@ -26,9 +26,9 @@
         checkstyle = {
           enable = true;
         };
-        #statix = {
-        #  enable = true;
-        #};
+        statix = {
+          enable = true;
+        };
       };
       formatting = {
         alejandra = {

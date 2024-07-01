@@ -11,7 +11,7 @@
     ./colorschemes/rose-pine.nix
 
     ./completion/cmp.nix
-    ./completion/copilot.nix
+    #./completion/copilot.nix
     ./completion/lspkind.nix
 
     ./dap/dap.nix
