@@ -2,7 +2,7 @@
   plugins.dap = {
     enable = true;
     adapters = {
-      executable = {
+      executables = {
         gdb = {
           command = "gdb";
         };
