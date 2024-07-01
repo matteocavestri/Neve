@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   plugins.none-ls = {
     enable = false;
@@ -34,22 +35,26 @@
 # Nix
         alejandra = {
           enable = true;
+          packages = [ pkgs.alejandra ];
         };
 # Shell
         shfmt = {
           enable = true;
+          packages = [ pkgs.shfmt ];
         };
-# C/cpp
-        clang_format = {
-          enable = true;
-        };
-# Rust
+# Rust TODO
         rustywind = {
           enable = true;
+        };
+# Yaml
+        yamlfmt = {
+          enable = true;
+          packages = [ pkgs.yamlfmt ];
         };
 # Various
         prettier = {
           enable = true;
+          packages = [ pkgs.prettier ];
           disableTsServerFormatter = true;
           withArgs = ''
             {
@@ -60,14 +65,17 @@
 # Java
         google_java_format = {
           enable = true;
+          packages = [ pkgs.google-java-format ];
         };
 # Lua
         stylua = {
           enable = true;
+          packages = [ pkgs.stylua ];
         };
 # Pythont
         black = {
           enable = true;
+          packages = [ pkgs.black ];
           withArgs = ''
             {
               extra_args = { "--fast" },
