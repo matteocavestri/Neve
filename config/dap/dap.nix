@@ -51,11 +51,7 @@
           type = "gdb";
           request = "launch";
           name = "Launch";
-          program = ''
-            function()
-              return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-            end
-          '';
+          program = "gdb";
         }
       ];
     };
