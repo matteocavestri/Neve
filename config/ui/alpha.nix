@@ -16,7 +16,7 @@
           position = "center";
         };
         type = "text";
-        val = [ 		
+        val = [
           "                                    "
 		      "               ██████               "
 		      "           ████▒▒▒▒▒▒████           "
