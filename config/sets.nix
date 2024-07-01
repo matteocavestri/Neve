@@ -75,7 +75,7 @@
       scrolloff = 8;
 
       # Place a column line
-      colorcolumn = "80";
+      #colorcolumn = "80";
 
       # Reduce which-key timeout to 10ms
       timeoutlen = 10;
@@ -129,7 +129,7 @@
         g.neovide_cursor_vfx_particle_lifetime = 5.0
         g.neovide_cursor_vfx_particle_density = 14.0
         g.neovide_cursor_vfx_particle_speed = 12.0
-        g.neovide_transparency = 0.8
+        g.neovide_transparency = 0.75
 
         -- Neovide Fonts
         -- o.guifont = "MonoLisa Trial:Medium:h15"

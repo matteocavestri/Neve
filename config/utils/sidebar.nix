@@ -21,7 +21,7 @@
         initial_width = 32,
         hide_statusline = false,
         update_interval = 1000,
-        sections = { "git", "containers" },
+        sections = { "datetime", "files", "git", "buffers", "containers" },
         section_separator = {"", "-----", ""},
         section_title_separator = {""},
         containers = {
@@ -31,6 +31,19 @@
         todos = { ignored_paths = {} },
         ["git"] = {
             icon = "", -- 
+        },
+        files = {
+          icon = "",
+          show_hidden = true,
+          ignored_paths = {"%.git$"}
+        },
+        buffers = {
+          icon = "",
+          ignored_buffers = {}, -- ignore buffers by regex
+          sorting = "id", -- alternatively set it to "name" to sort by buffer name instead of buf id
+          show_numbers = true, -- whether to also show the buffer numbers
+          ignore_not_loaded = false, -- whether to ignore not loaded buffers
+          ignore_terminal = true, -- whether to show terminal buffers in the list
         },
     })
           cmd = {
