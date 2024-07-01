@@ -2,7 +2,11 @@
   plugins.dap = {
     enable = true;
     adapters = {
-      codelldb.enable = true;
+      executable = {
+        gdb = {
+          command = "gdb";
+        };
+      };
     };
     signs = {
       dapBreakpoint = {
@@ -51,9 +55,14 @@
       ];
       c = [
         {
-          type = "codelldb";
+          type = "gdb";
           request = "launch";
           name = "Launch";
+          program = ''
+            function()
+              return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+            end
+        '';
         }
       ];
     };
