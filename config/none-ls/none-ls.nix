@@ -35,7 +35,6 @@
 # Nix
         alejandra = {
           enable = true;
-          packages = [ pkgs.alejandra ];
         };
 # Shell
         shfmt = {
