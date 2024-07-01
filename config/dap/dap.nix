@@ -16,7 +16,12 @@
       };
     };
     extensions = {
+# Python
       dap-python = {
+        enable = true;
+      };
+# Go
+      dap-go = {
         enable = true;
       };
       dap-ui = {
@@ -30,6 +35,7 @@
       };
     };
     configurations = {
+# Java
       java = [
         {
           type = "java";
